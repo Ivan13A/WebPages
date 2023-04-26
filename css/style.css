@@ -1,0 +1,225 @@
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 60.5%;
+    scroll-behavior: smooth;
+}
+
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+.img-fondo{
+background-image: url(../img/tienda.jpg);
+}
+img{
+    width: 100%;
+}
+.velo-negro{
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-img{
+    max-width: 40rem;
+    margin: 3rem 0;
+    border-radius: 50%;
+}
+
+nav{
+    margin: 3rem 0 8rem 0;
+    background-color: rgba(255, 55, 55, 0.768);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
+a{
+    text-decoration: none;
+}
+nav a{
+    font-weight: 800;
+    font-size: 3rem;
+    color: white;
+    text-transform: uppercase;
+}
+nav a:hover{
+    color: black;
+}
+
+.nuestros-productos{
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.productos{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);   
+}
+
+.producto{
+    background-color: rgba(255, 55, 55, 0.768);
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.producto-blanco{
+    background-color: white;
+    height: 40rem;
+    object-fit: cover;
+    padding: 1rem;
+}
+.producto-nombre{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.producto-info{
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.card1 {
+    background: url(../img/ch1.jpg);
+    background-size: cover;
+}
+.card2 {
+    background: url(../img/cm1.jpg);
+    background-size: cover;
+}
+.card3 {
+    background: url(../img/weights.webp);
+    background-size: cover;
+}
+
+.card1:hover {
+    animation: animatec1 10s infinite;
+}
+
+.card2:hover {
+    animation: animatec2 10s infinite;
+}
+.card3:hover {
+    animation: animatec3 10s infinite;
+}
+
+@keyframes animatec1 {
+    20% {
+        background-image: url(../img/ch2.jpg);
+    }
+    40% {
+        background-image: url(../img/ch3.jpg);
+    }
+    60% {
+        background-image: url(../img/ch4.jpg);
+    }
+    80% {
+        background-image: url(../img/ch5.jpg);
+    }
+    100% {
+        background-image: url(../img/ch1.jpg);
+    }
+}
+
+@keyframes animatec2 {
+    20% {
+        background-image: url(../img/cm2.jpg);
+    }
+    40% {
+        background-image: url(../img/cm3.jpg);
+    }
+    60% {
+        background-image: url(../img/cm4.webp);
+    }
+    80% {
+        background-image: url(../img/cm5.jpg);
+    }
+    100% {
+        background-image: url(../img/cm1.jpg);
+    }
+}
+
+@keyframes animatec3 {
+    20% {
+        background-image: url(../img/shoes.jpg);
+    }
+    40% {
+        background-image: url(../img/ac.jpg);
+    }
+    60% {
+        background-image: url(../img/it.png);
+    }
+    80% {
+        background-image: url(../img/pb.jpg);
+    }
+    100% {
+        background-image: url(../img/weights.webp);
+    }
+}
+.button {
+    width: 180px;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 0;
+    background: #000;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+    transform: translateY(-20px)
+}
+
+.producto button {
+   margin-left: 65px;
+}
+
+.footer{
+    background-color: black;
+    padding: 3.5rem;
+    padding-bottom: 2rem;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+.social-list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.social-list img {
+    height: 30px;
+    transition: transform 0.5s;
+}
+
+.social-list img:hover {
+    filter: drop-shadow(0 0 14px #000);
+    transform: translateY(-6px)
+}
